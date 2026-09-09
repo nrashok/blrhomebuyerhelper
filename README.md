@@ -36,7 +36,7 @@ Once loaded, start a conversation naming the property you're evaluating and begi
 
 ## Disclaimer
 
-This project was built over a weekend as a personal, hobby exercise — a byproduct of my own Hyderabad property search — and is shared publicly in case it helps other buyers. It is **not**:
+This project was built over a weekend as a personal, hobby exercise — a byproduct of Hyderabad property search — and is shared publicly in case it helps other buyers. It is **not**:
 
 - A commercial product or service. No professional relationship of any kind is created by using it, forking it, or contacting me about it.
 - Legal, financial, tax, engineering, surveying, or investment advice.
