@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "apartment-due-diligence-verifier": {
+      "source": "nrashok/blrhomebuyerhelper",
+      "sourceType": "github",
+      "skillPath": "skills/apartment-due-diligence-verifier/SKILL.md",
+      "computedHash": "609f55176cc9e9064970e2733714dc215f0cec65c282ed7e2de26c5f5ee327c9"
+    },
+    "apartment-project-comparator": {
+      "source": "nrashok/blrhomebuyerhelper",
+      "sourceType": "github",
+      "skillPath": "skills/apartment-project-comparator/SKILL.md",
+      "computedHash": "02539831748fa31bacbf08302c1139f30f4c69d53d1ad71c553d4b3356fe01c9"
+    },
+    "land-plot-due-diligence-verifier": {
+      "source": "nrashok/blrhomebuyerhelper",
+      "sourceType": "github",
+      "skillPath": "skills/land-plot-due-diligence-verifier/SKILL.md",
+      "computedHash": "96cb29e1938c4b41d8252171c2b22e55d977958b95ff0d19216d1159c966f4c6"
+    },
+    "villa-due-diligence-verifier": {
+      "source": "nrashok/blrhomebuyerhelper",
+      "sourceType": "github",
+      "skillPath": "skills/villa-due-diligence-verifier/SKILL.md",
+      "computedHash": "95bb7cc00edc4af2827729ba8ed40e66fa65be1c1186ab403bd521b1744542e3"
+    }
+  }
+}
