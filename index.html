@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangalore Home Buyer Helper &mdash; Property Due-Diligence Skills for Claude | Bengaluru Karnataka</title>
+  <meta name="description" content="Free open-source Claude Skills for Bangalore (Bengaluru) property due diligence. Verify apartments, villas, land plots across K-RERA, Bhoomi, e-Khata, BBMP, Kaveri &amp; 15+ Karnataka government portals. 114-item checklist.">
+  <meta name="keywords" content="Bangalore property due diligence, Bengaluru home buying, Karnataka real estate verification, K-RERA check, Bhoomi land records, e-Khata BBMP, apartment due diligence Bangalore, villa due diligence Bengaluru, land plot verification Karnataka, property checklist Bangalore, Claude AI skills, BDA BMRDA layout approval, Kaveri registration, encumbrance certificate Karnataka, khata verification, sale agreement review Bangalore">
+  <meta name="author" content="nrashok">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nrashok.github.io/blrhomebuyerhelper/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bangalore Home Buyer Helper &mdash; Property Due-Diligence Skills for Claude">
+  <meta property="og:description" content="Free Claude Skills that turn Bangalore/Karnataka property due-diligence into interactive verification sessions. Covers apartments, villas, land plots with 114-item checklists across K-RERA, Bhoomi, e-Khata, BBMP, Kaveri &amp; more.">
+  <meta property="og:url" content="https://nrashok.github.io/blrhomebuyerhelper/">
+  <meta property="og:site_name" content="Bangalore Home Buyer Helper">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bangalore Home Buyer Helper &mdash; Property Due-Diligence Skills for Claude">
+  <meta name="twitter:description" content="Free open-source Claude Skills for Bangalore property due diligence. 114-item checklist covering K-RERA, Bhoomi, e-Khata, BBMP, Kaveri &amp; 15+ Karnataka portals.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Bangalore Home Buyer Helper",
+    "alternateName": "Bengaluru Home Buyer Helper",
+    "description": "Open-source Claude Skills for Bangalore/Karnataka property due-diligence verification. Covers apartments, villas, and land plots with 114-item checklists across 15+ government portals.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "license": "https://opensource.org/licenses/MIT",
+    "url": "https://nrashok.github.io/blrhomebuyerhelper/",
+    "codeRepository": "https://github.com/nrashok/blrhomebuyerhelper",
+    "author": {
+      "@type": "Person",
+      "name": "nrashok",
+      "url": "https://github.com/nrashok"
+    },
+    "about": {
+      "@type": "Place",
+      "name": "Bangalore, Karnataka, India",
+      "alternateName": "Bengaluru"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --text: #1c1917;
+      --text-muted: #57534e;
+      --accent: #b45309;
+      --accent-light: #fef3c7;
+      --border: #e7e5e4;
+      --radius: 12px;
+      --max-w: 960px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1917;
+        --surface: #292524;
+        --text: #fafaf9;
+        --text-muted: #a8a29e;
+        --accent: #f59e0b;
+        --accent-light: #451a0320;
+        --border: #44403c;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .logo { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.02em; }
+    .logo span { color: var(--accent); }
+    header nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-left: 1.5rem;
+      transition: color 0.15s;
+    }
+    header nav a:hover { color: var(--text); }
+
+    /* HERO */
+    .hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+    .cta-row {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.12s, box-shadow 0.12s;
+    }
+    .btn:active { transform: scale(0.97); }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    /* STATS BAR */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 2rem 1.5rem 0;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat strong {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .stat span { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* SECTION */
+    section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2rem;
+    }
+    section h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    section > p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      max-width: 640px;
+    }
+
+    /* SKILL CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: box-shadow 0.15s, transform 0.15s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .card-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 1rem;
+    }
+    .card-meta strong { color: var(--text); }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .step {
+      position: relative;
+      padding-left: 2.8rem;
+    }
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .step p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* PORTALS TABLE */
+    .portals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
+    }
+    .portal-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .portal-item strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* EXAMPLE */
+    .example-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      font-size: 0.88rem;
+      overflow-x: auto;
+    }
+    .example-box .msg {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .example-box .msg:last-child { border-bottom: none; }
+    .msg-role {
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.15rem;
+    }
+    .msg-role.user { color: var(--accent); }
+    .msg-role.assistant { color: var(--text-muted); }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .disclaimer strong { color: var(--text); }
+
+    /* FOOTER */
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Bangalore<span>HomeBuyer</span>Helper</div>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#portals">Portals</a>
+      <a href="https://github.com/nrashok/blrhomebuyerhelper">GitHub</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Bengaluru property due diligence,<br><em>powered by Claude</em></h1>
+    <p>Open-source Claude Skills that turn Karnataka's scattered property records &mdash; K-RERA, Bhoomi, e-Khata, BBMP, Kaveri, and a dozen more portals &mdash; into a structured, interactive verification session.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://github.com/nrashok/blrhomebuyerhelper">Get the skills</a>
+      <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><strong>4</strong><span>Skills</span></div>
+    <div class="stat"><strong>114</strong><span>Checklist items</span></div>
+    <div class="stat"><strong>16</strong><span>Sections</span></div>
+    <div class="stat"><strong>15+</strong><span>Portals covered</span></div>
+  </div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Each skill is a portable instruction set that guides Claude through a property-type-specific verification checklist.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">&#127970;</div>
+        <h3>Apartment Due Diligence</h3>
+        <p>Apartments and flats in a tower or phase. Covers title, approvals, RERA, financials, and site-visit items.</p>
+        <div class="card-meta"><span><strong>16</strong> sections</span><span><strong>114</strong> items</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127968;</div>
+        <h3>Villa Due Diligence</h3>
+        <p>Villas and independent houses in gated communities or plotted layouts. Includes land-use and conversion checks.</p>
+        <div class="card-meta"><span><strong>15</strong> sections</span><span><strong>108</strong> items</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127966;</div>
+        <h3>Land &amp; Plot Due Diligence</h3>
+        <p>Land parcels and residential plots. Focuses on title chain, conversion, layout sanction, and boundary verification.</p>
+        <div class="card-meta"><span><strong>13</strong> sections</span><span><strong>73</strong> items</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9878;</div>
+        <h3>Project Comparator</h3>
+        <p>Side-by-side comparison of two or more apartment projects on price, builder credibility, approvals, and risk.</p>
+        <div class="card-meta"><span><strong>4-state</strong> tracker</span><span><strong>114</strong> items embedded</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <h2>How it works</h2>
+    <p>Load a skill into Claude Code or claude.ai, describe your property, and start sharing documents.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Start a session</h3>
+        <p>Tell Claude the property details &mdash; project name, survey number, K-RERA ID &mdash; and what documents you have.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Share documents</h3>
+        <p>Upload documents as you collect them: K-RERA certificate, sale agreement, cost sheet, EC, khata, RTC, and more.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Track findings</h3>
+        <p>Claude cross-checks each document against the checklist and maintains a live tracker: Verified, Flagged, or Open.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Get a report</h3>
+        <p>Request a structured report: headline verdict, section-by-section walkthrough, and a close-out list of what's still needed.</p>
+      </div>
+    </div>
+
+    <!-- INLINE EXAMPLE -->
+    <div style="margin-top: 2.5rem;">
+      <h3 style="font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-muted);">Example session</h3>
+      <div class="example-box">
+        <div class="msg">
+          <div class="msg-role user">You</div>
+          I am evaluating Tower B, Unit 1202 in Cedar Crest Residences, Whitefield. Developer: Azure Vale Homes. K-RERA no. KR-1234567890-2025. I have the K-RERA certificate, sale agreement, cost sheet, and brochure.
+        </div>
+        <div class="msg">
+          <div class="msg-role assistant">Claude</div>
+          I'll anchor this on Tower B, Unit 1202, not the project as a whole. I can verify the K-RERA and authority records live if web access is available.
+        </div>
+        <div class="msg">
+          <div class="msg-role user">You</div>
+          Here is the K-RERA certificate and cost sheet. The unit is 1,240 sqft carpet; the cost sheet shows a DG backup of 3 kVA per flat.
+        </div>
+        <div class="msg">
+          <div class="msg-role assistant">Claude</div>
+          3.1 &#10003; Verified by the K-RERA certificate &bull; 14.1 &#10003; Verified from cost sheet &bull; 6.4 &#9888; Flagged &mdash; DG note is not enough without the written allocation clause. Highest priority Open: 2.5 tower-specific OC and 3.3 final Fire NOC.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTALS -->
+  <section id="portals">
+    <h2>Karnataka portals referenced</h2>
+    <p>The skills tell you exactly which portal to check for each item. Here are the major ones.</p>
+    <div class="portals-grid">
+      <div class="portal-item"><strong>K-RERA</strong> &mdash; RERA registration &amp; project status</div>
+      <div class="portal-item"><strong>Bhoomi</strong> &mdash; RTC &amp; land records</div>
+      <div class="portal-item"><strong>e-Aasthi / e-Khata</strong> &mdash; BBMP property records</div>
+      <div class="portal-item"><strong>BBMP / GBA</strong> &mdash; Property tax &amp; approvals</div>
+      <div class="portal-item"><strong>BDA / BMRDA</strong> &mdash; Layout approvals</div>
+      <div class="portal-item"><strong>Kaveri 2.0</strong> &mdash; Registration &amp; EC</div>
+      <div class="portal-item"><strong>BESCOM</strong> &mdash; Electricity connection</div>
+      <div class="portal-item"><strong>BWSSB</strong> &mdash; Water &amp; sewerage</div>
+      <div class="portal-item"><strong>KSPCB</strong> &mdash; Environmental clearance</div>
+      <div class="portal-item"><strong>AAI NOCAS</strong> &mdash; Height clearance</div>
+      <div class="portal-item"><strong>Karnataka Fire</strong> &mdash; Fire NOC</div>
+      <div class="portal-item"><strong>BIAPPA / BMICAPA</strong> &mdash; Airport corridor planning</div>
+      <div class="portal-item"><strong>MCA</strong> &mdash; Company records</div>
+      <div class="portal-item"><strong>MUDA / KHB / KIADB</strong> &mdash; Development authorities</div>
+    </div>
+  </section>
+
+  <!-- GETTING STARTED -->
+  <section>
+    <h2>Getting started</h2>
+    <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="card">
+        <h3>Claude Code / Agent SDK</h3>
+        <p>Copy the skill folder (e.g. <code>skills/apartment-due-diligence-verifier/</code>) into your project's skills directory, or point your skills configuration at this repository.</p>
+      </div>
+      <div class="card">
+        <h3>claude.ai</h3>
+        <p>Create a new skill in claude.ai and paste in the contents of the relevant <code>SKILL.md</code> file. Start a conversation naming your property.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section>
+    <h2>Disclaimer</h2>
+    <div class="disclaimer">
+      <strong>This is a weekend hobby project, not a professional or commercial product.</strong> It is provided for informational and educational purposes only, with no warranty of any kind. It is not legal, financial, engineering, surveying, or investment advice, and does not replace an independent lawyer, structural engineer/surveyor, or chartered accountant. A "Verified" status means a document matched a checklist item's wording &mdash; nothing more. Regulatory references reflect the author's understanding at time of writing and may be incomplete or outdated. Use entirely at your own risk. See the <a href="https://github.com/nrashok/blrhomebuyerhelper/blob/main/LICENSE" style="color: var(--accent);">MIT License</a> for full terms.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; 2026 BLRHomeBuyerHelper &middot; MIT License</span>
+    <span>
+      <a href="https://github.com/nrashok/blrhomebuyerhelper">GitHub</a> &middot;
+      <a href="https://github.com/nrashok/blrhomebuyerhelper/issues">Issues</a>
+    </span>
+  </footer>
+
+</body>
+</html>
