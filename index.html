@@ -150,6 +150,33 @@
     }
     header nav a:hover { color: var(--text); }
 
+    @media (max-width: 720px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0.9rem 1rem;
+      }
+
+      .logo {
+        width: 100%;
+        text-align: center;
+      }
+
+      header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.45rem 0.9rem;
+        width: 100%;
+      }
+
+      header nav a {
+        margin-left: 0;
+        font-size: 0.78rem;
+      }
+    }
+
     /* HERO */
     .hero {
       max-width: var(--max-w);
@@ -725,7 +752,7 @@
           </div>
           <div class="msg">
             <div class="msg-role assistant">Claude</div>
-            I'll anchor everything to survey number 91/2A and verify the title, conversion, and layout status before covering the financial terms. I can check Bhoomi, Kaveri, and local planning records live if web access is enabled.
+            I'll anchor everything to survey number 91/2A and verify the title, conversion, and layout status before covering the financial terms. I can check Bhoomi, K-RERA, and local planning records live if web access is enabled.
           </div>
           <div class="msg">
             <div class="msg-role user">You</div>
