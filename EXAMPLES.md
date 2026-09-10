@@ -35,7 +35,7 @@ Assistant: Headline verdict: needs-follow-up before proceeding. Section counts: 
 Setup line: "Load the land skill from skills/land-plot-due-diligence-verifier/SKILL.md, then paste this opening prompt: 'I am evaluating Plot 42, Survey No. 91/2A, in Kanakapura Road fringe area. Seller says it is a residential plot in a gated layout. I have the mother deed, EC, RTC, and a brochure from the layout.'"
 
 User: I am evaluating Plot 42, Survey No. 91/2A, in Kanakapura Road fringe area. Seller says it is a residential plot in a gated layout. I have the mother deed, EC, RTC, and a brochure from the layout.
-Assistant: I’ll anchor everything to survey number 91/2A and verify the title, conversion, and layout status before covering the financial terms. I can check Bhoomi, IGRS, and local planning records live if web access is enabled.
+Assistant: I’ll anchor everything to survey number 91/2A and verify the title, conversion, and layout status before covering the financial terms. I can check Bhoomi, Kaveri (Kaveri 2.0), and local planning records live if web access is enabled.
 User: Here is the mother deed and EC. The seller says 'approved layout'.
 Assistant: What changed: 1.1 ✅ Verified for the deed chain; 1.2 ✅ Verified for the 30-year EC; 4.1 ⚠️ Flagged because a brochure's 'approved layout' label is not enough without the exact layout sanction and survey-number match. Highest priority Open: 2.2 DC conversion, 2.3 kharab/gramathana classification, and 4.4 lake/buffer checks.
 User: I also uploaded the RTC and the layout sanction. The RTC still shows agricultural status, and there is no DC conversion order.

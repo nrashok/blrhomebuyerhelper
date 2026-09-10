@@ -16,7 +16,7 @@ Before processing any document, gather:
 1. **Project identification** — developer name, project/community name, and the specific villa/unit number or plot within it.
 2. **K-RERA registration number**, if known.
 3. **What documents are already in hand**, and what's still pending.
-4. **Whether to attempt live verification** against public portals (K-RERA, Bhoomi, e-Aasthi, BBMP/BDA/BMRDA, AAI NOCAS) if you have live web access in this session. If you do, offer it explicitly — cross-checking a document's claims against the live government record is far stronger evidence than the document alone.
+4. **Whether to attempt live verification** against public portals (K-RERA, Bhoomi, e-Aasthi, BBMP/BDA/BMRDA/BIAPPA/BMICAPA, AAI NOCAS, Kaveri (Kaveri 2.0)) if you have live web access in this session. If you do, offer it explicitly — cross-checking a document's claims against the live government record is far stronger evidence than the document alone.
 
 ## Findings Tracker
 
@@ -33,7 +33,7 @@ Rules for updating the tracker:
 - If two documents disagree — e.g. the brochure's plot/built-up area doesn't match the sale agreement's — mark the item ⚠️ **Flagged** and state the conflict plainly.
 - Title and statutory-approval items (Section 2, Section 3) get the strictest reading. A missing OC, unexplained gap in the deed chain, or a buffer/land-status question is a Flagged item even on partial evidence.
 - Items tagged as requiring **Self** in "Verify via" can never be closed from a document alone. Keep these ⬜ Open until the buyer confirms they've done the visit and reports back what they found.
-- When live portal access is available and the buyer agrees, run the check yourself (K-RERA, Bhoomi, e-Aasthi, BBMP/BDA/BMRDA, AAI NOCAS) and treat a live-portal confirmation as at least as strong as a document.
+- When live portal access is available and the buyer agrees, run the check yourself (K-RERA, Bhoomi, e-Aasthi, BBMP/BDA/BMRDA/BIAPPA/BMICAPA, AAI NOCAS, Kaveri (Kaveri 2.0)) and treat a live-portal confirmation as at least as strong as a document.
 
 ## After each document
 
@@ -70,17 +70,17 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 
 | # | Item | Tag | Verify via |
 |---|---|---|---|
-| 2.1 | Mother deed / chain of title unbroken for a minimum of 30 years | S | Govt: Sub-Registrar — deed chain via Karnataka IGRS / district sub-registrar records |
-| 2.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period, pulled from the sub-registrar directly — not just a developer-supplied copy | V | Govt: Sub-Registrar — EC application, or in person |
+| 2.1 | Mother deed / chain of title unbroken for a minimum of 30 years | S | Govt: Sub-Registrar — deed chain via Kaveri Online Services (Kaveri 2.0), kaverionline.karnataka.gov.in or the district sub-registrar records |
+| 2.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period, pulled from the sub-registrar directly — not just a developer-supplied copy | V | Govt: Sub-Registrar — EC application via Kaveri (Kaveri 2.0) or district office |
 | 2.3 | Agricultural land requires a proper DC conversion / land-conversion order before residential use, and the record should match the current khata and site plan | F | Govt: Revenue Dept / local authority — conversion order and khata status |
 | 2.4 | Patta / RTC / survey records confirming the seller's title matches the sale deed and current revenue records | V | Govt: Bhoomi / Revenue Dept — RTC / survey strip extract |
-| 2.5 | Layout approval from the relevant authority (BDA/BMRDA/MUDA/KHB or local municipality) matches the site's actual boundaries — cross-check the survey number and plan | V | Govt: local planning authority — approved layout copy + survey-number cross-check |
+| 2.5 | Layout approval from the relevant authority (BBMP/GBA, BDA, BMRDA, BIAPPA, BMICAPA, MUDA, KHB or local municipality) matches the site's actual boundaries — cross-check the survey number and plan; a plot in the airport-influence zone must show a layout sanctioned by BIAPPA, and an airport-radius project also needs the AAI NOCAS height clearance | V | Govt: local planning authority — approved layout copy + survey-number cross-check |
 | 2.6 | Building permission for the specific block or villa cluster you're buying into, not just the layout as a whole | V | Govt: authority — plan approval record |
 | 2.7 | Occupancy Certificate (OC) — for any 'ready to move' claim, a missing OC is a hard stop no matter how finished it looks | F | Govt: relevant authority — OC copy |
 | 2.8 | If the seller isn't the original owner, verify the full GPA chain — GPA-based sales carry materially higher legal risk | S | Govt: Sub-Registrar — registered GPA document(s) |
 | 2.9 | Confirm no pending litigation, stay order, land-acquisition, or de-notification issue on the exact survey number | V | Public records — Karnataka High Court filings + authority notices |
 | 2.10 | Check the survey number directly on the Bhoomi/land-records portal, independent of any developer-supplied paperwork | V | Govt: Bhoomi — landrecords.karnataka.gov.in survey/land-record lookup |
-| 2.11 | In Bengaluru villa layouts, check for kharab, gramathana, stormwater/rajakaluve or lake-buffer encroachments that can invalidate the approval or title | F | Govt: Revenue Dept / local authority — village records and drainage buffer maps |
+| 2.11 | In Bengaluru villa layouts, check for kharab, gramathana, stormwater/rajakaluve or lake-buffer encroachments that can invalidate the approval or title; confirm the parcel is not granted/assigned SC/ST land protected under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands) — such transfers can be voided years later; check the grant order / saguvali chit and any non-alienation condition | F | Govt: Revenue Dept / local authority — village records, grant order, saguvali chit, and drainage buffer maps |
 
 ### 3. Statutory Approvals & Regulatory Clearances
 
@@ -248,6 +248,7 @@ Any one of these, on its own, is a strong signal to pause the transaction until 
 - Occupancy or fire-safety clearance is missing or not specific to the project phase
 - Any request to pay a large cash component outside the registered sale consideration
 - Builder cannot explain title gaps, conversion status, or a mismatch between records and the approved plan
+- Granted or assigned land restricted under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands), or any SC/ST grant with a non-alienation condition, without a clear legal resolution
 
 ## Guardrails
 

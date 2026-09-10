@@ -5,7 +5,7 @@ description: Use when a buyer wants to validate a specific Bengaluru/Karnataka l
 
 # Land & Plot Due-Diligence Verifier (Bengaluru/Karnataka)
 
-You are helping a buyer validate a specific land parcel or residential plot in and around Bengaluru against a 72-item, 13-section due-diligence checklist. The buyer will describe the plot and upload documents over the course of the conversation — a mother deed, an Encumbrance Certificate, a Bhoomi/RTC extract, a layout approval, a K-RERA filing, a sale agreement, a surveyor's report, and so on. Your job is to read each document, match its contents against the checklist, and maintain a running, evolving verdict — not to produce a single one-shot report and stop.
+You are helping a buyer validate a specific land parcel or residential plot in and around Bengaluru against a 73-item, 13-section due-diligence checklist. The buyer will describe the plot and upload documents over the course of the conversation — a mother deed, an Encumbrance Certificate, a Bhoomi/RTC extract, a layout approval, a K-RERA filing, a sale agreement, a surveyor's report, and so on. Your job is to read each document, match its contents against the checklist, and maintain a running, evolving verdict — not to produce a single one-shot report and stop.
 
 Land carries the highest fraud and total-loss risk of any residential asset class: several statuses (assigned land, kharab/gramathana, government/poramboke, lake buffer, or acquisition risk) make a sale legally void or heavily impaired. Treat Section 1 (Title & Ownership) and Section 2 (Land Classification & Conversion Status) with more scrutiny than any other part of this checklist.
 
@@ -17,7 +17,7 @@ Before processing any document, gather:
 2. **Transaction type** — is this an individual resale plot or a plot inside an organized/developer layout? This changes which sections apply.
 3. **K-RERA number**, if the plot is inside a layout above the threshold.
 4. **What documents are already in hand**, and what's still pending.
-5. **Whether to attempt live verification** against public portals (Bhoomi, K-RERA, IGRS guideline value, planning authority GIS) if you have live web access.
+5. **Whether to attempt live verification** against public portals (Bhoomi, K-RERA, Kaveri (Kaveri 2.0) guideline value, planning authority GIS, BIAPPA/BMICAPA if relevant) if you have live web access.
 
 ## Findings Tracker
 
@@ -34,7 +34,7 @@ Rules for updating the tracker:
 - If two documents disagree — e.g. the layout plan shows a different plot extent than the sale agreement — mark the item ⚠️ **Flagged** and state the conflict plainly.
 - Title-chain and classification items (Section 1, Section 2) get the strictest reading. A gap in the deed chain, unexplained transfer, or any hint of assigned/government land or sensitive-status land is a Flagged item even on partial evidence.
 - Items tagged as requiring **Self** can never be closed from a document alone. Keep these ⬜ Open until the buyer confirms they've done the visit.
-- When live portal access is available and the buyer agrees, run the check yourself (Bhoomi, K-RERA, IGRS guideline value, local planning GIS) and treat a live-portal confirmation as at least as strong as a document.
+- When live portal access is available and the buyer agrees, run the check yourself (Bhoomi, K-RERA, Kaveri (Kaveri 2.0) guideline value, local planning GIS, BIAPPA/BMICAPA where relevant) and treat a live-portal confirmation as at least as strong as a document.
 
 ## After each document
 
@@ -56,11 +56,12 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 
 | # | Item | Tag | Verify via |
 |---|---|---|---|
-| 1.1 | Mother deed / chain of title unbroken for a minimum of 30 years, tracing every transfer of the specific survey number | S | Govt: Sub-Registrar — registered deed chain via Karnataka IGRS or district records |
-| 1.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period, pulled directly from the sub-registrar — not a seller- or broker-supplied copy | V | Govt: Sub-Registrar — EC application via IGRS or district office |
+| 1.1 | Mother deed / chain of title unbroken for a minimum of 30 years, tracing every transfer of the specific survey number | S | Govt: Sub-Registrar — registered deed chain via Kaveri Online Services (Kaveri 2.0), kaverionline.karnataka.gov.in or district records |
+| 1.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period, pulled directly from the sub-registrar — not a seller- or broker-supplied copy | V | Govt: Sub-Registrar — EC application via Kaveri (Kaveri 2.0) or district office |
 | 1.3 | Cross-check the survey number and extent directly on the Bhoomi portal, independent of any paperwork shown to you | V | Govt: Bhoomi — landrecords.karnataka.gov.in survey/extent lookup |
-| 1.4 | Confirm the land is not assigned land, government/poramboke, Inam, Wakf Board, or Endowment land — each carries transfer restrictions | F | Govt: Revenue Dept / Bhoomi — classification and assigned-land register lookup |
+| 1.4 | Confirm the land is not granted/assigned SC/ST land protected under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands), government/poramboke, Inam, Wakf Board, or Endowment land — such transfers can be voided years later; check the grant order / saguvali chit and any non-alienation condition | F | Govt: Revenue Dept / Bhoomi — classification record, grant order, saguvali chit, and assigned-land register lookup |
 | 1.5 | Patta / RTC / survey records confirming current recorded ownership matches the seller | V | Govt: Bhoomi / Revenue Dept — RTC / patta extract |
+| 1.6 | Confirm the site's Khata status (A-Khata vs B-Khata) on BBMP e-Aasthi (bbmpeaasthi.karnataka.gov.in); a B-Khata site carries loan, building-licence, and resale restrictions | F | Govt: BBMP e-Aasthi — A-Khata vs B-Khata status for the parcel |
 | 1.6 | If purchasing via GPA rather than directly from the titleholder, verify the full GPA chain | F | Govt: Sub-Registrar — registered GPA document(s) |
 | 1.7 | Confirm no pending partition suit, succession dispute, or multiple-heir claim — request a legal heir certificate where the seller inherited the land | V | Govt: Revenue Office / local authority — legal heir certificate; Public records — court filings |
 | 1.8 | Litigation search: seller and land-parcel name against Karnataka High Court cause lists and Revenue Office records | V | Public records — Karnataka High Court cause-list and Revenue records |
@@ -69,7 +70,7 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 
 | # | Item | Tag | Verify via |
 |---|---|---|---|
-| 2.1 | Confirm the land is not assigned land, government/poramboke, Inam, Wakf Board, or Endowment land | F | Govt: Revenue Dept / Bhoomi — classification record |
+| 2.1 | Confirm the land is not granted/assigned SC/ST land protected under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands), government/poramboke, Inam, Wakf Board, or Endowment land — check the grant order / saguvali chit and any non-alienation condition | F | Govt: Revenue Dept / Bhoomi — classification record, grant order, saguvali chit, and assigned-land register lookup |
 | 2.2 | If the land is agricultural, confirm DC conversion / land-conversion order is complete before any residential layout or construction | F | Govt: Revenue Dept / local authority — conversion order |
 | 2.3 | Check whether the parcel carries any kharab, gramathana, or protected-land status that affects saleability or development potential | F | Govt: Revenue Dept / local authority — kharab and village records |
 | 2.4 | Confirm there is no pending acquisition or de-notification issue affecting the land, including BDA/BMRDA/MUDA/KIADB or road-widening notifications | V | Govt: Revenue Dept / authority — acquisition and de-notification notices |
@@ -90,11 +91,11 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 
 | # | Item | Tag | Verify via |
 |---|---|---|---|
-| 4.1 | Layout approval from the relevant authority, matching the actual plot boundaries — cross-check on the local planning GIS or authority portal | V | Govt: authority — approved layout copy + GIS cross-check |
+| 4.1 | Layout approval from the relevant authority, matching the actual plot boundaries — cross-check on the local planning GIS or authority portal; in the airport-influence zone, the plot must show a layout sanctioned by BIAPPA rather than a revenue/unapproved layout | V | Govt: authority — approved layout copy + GIS cross-check, plus BIAPPA if relevant |
 | 4.2 | Confirm the layout's mandatory open-space/park reservation hasn't been quietly encroached upon or sold as additional plots | F | Govt: planning authority — approved layout plan open-space allocation, checked against Self — site visit |
 | 4.3 | K-RERA registration for the plotted development, where required, verified live on the K-RERA portal | V | RERA — K-RERA project search |
 | 4.4 | Check lake-catchment, buffer-zone, rajakaluve, and valley restrictions for the exact survey number | F | Govt: planning authority / Revenue Dept — local restriction maps and notices |
-| 4.5 | Airport height NOC from AAI if within the notified radius — relevant even for open land you plan to build on later | S | Govt: AAI NOCAS — clearance certificate, by survey number |
+| 4.5 | Airport height NOC from AAI if within the notified radius — relevant even for open land you plan to build on later; a project inside the Kempegowda International Airport (KIA) notified radius also needs the AAI NOCAS height clearance | S | Govt: AAI NOCAS — clearance certificate, by survey number |
 | 4.6 | Confirm the layout isn't sitting on land still pending final regularisation or approval under local schemes | V | Govt: Revenue Dept / authority — regularisation status lookup |
 
 ### 5. Zoning, Environmental & Site Conditions
@@ -153,7 +154,7 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 | # | Item | Tag | Verify via |
 |---|---|---|---|
 | 10.1 | Confirm the sale consideration in the agreement isn't understated relative to actual payment — undervaluing to save stamp duty is common but weakens future resale and loan position | F | Self — compare agreement figure against actual payment records |
-| 10.2 | Compare the seller's asking price against the local guideline (market) value for the survey number, and confirm which figure stamp duty is calculated on | S | Govt: district registration / IGRS — guideline value lookup |
+| 10.2 | Compare the seller's asking price against the local guideline (market) value for the survey number, and confirm which figure stamp duty is calculated on | S | Govt: district registration / Kaveri (Kaveri 2.0) — guideline value lookup |
 | 10.3 | Full cost break-up in writing: base plot price, corner/park-facing premium, development charges, stamp duty and registration, legal fees, and any club/maintenance corpus | V | Builder/Seller — signed, dated cost sheet |
 | 10.4 | TDS obligation — confirm who deducts and deposits it before registration if applicable | S | Govt: Income Tax Dept — TDS rules; Third-party — CA |
 | 10.5 | For plots sold under a construction-linked or installment scheme, confirm the payment plan and whether K-RERA escrow protections apply | V | K-RERA filing + Builder — agreement payment schedule |
@@ -201,6 +202,7 @@ Any one of these, on its own, is a strong signal to pause the transaction until 
 - Any request to pay a large cash component outside the registered sale consideration
 - Plot is landlocked with no recorded legal right-of-way
 - Seller cannot produce an unbroken 30-year EC or explain a gap in the title chain
+- Granted or assigned land restricted under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands), or any SC/ST grant with a non-alienation condition, without a clear legal resolution
 
 ## Guardrails
 

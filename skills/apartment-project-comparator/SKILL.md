@@ -77,9 +77,9 @@ Used for deepening any individual project to full due-diligence rigor. Tags: **V
 
 | # | Item | Tag | Verify via |
 |---|---|---|---|
-| 2.1 | Mother deed / chain of title unbroken for a minimum of 30 years | S | Govt: Sub-Registrar — deed chain through Karnataka IGRS / district registry |
-| 2.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period | V | Govt: Sub-Registrar — EC application |
-| 2.3 | Confirm whether the land falls under BBMP, BDA, BMRDA, MUDA, KHB or KIADB jurisdiction | S | Govt: planning authority — jurisdiction layer on the parcel |
+| 2.1 | Mother deed / chain of title unbroken for a minimum of 30 years | S | Govt: Sub-Registrar — deed chain through Kaveri Online Services (Kaveri 2.0), kaverionline.karnataka.gov.in or the district registry |
+| 2.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period | V | Govt: Sub-Registrar — EC application via Kaveri (Kaveri 2.0) |
+| 2.3 | Confirm whether the land falls under BBMP/GBA, BDA, BMRDA, BIAPPA, BMICAPA, MUDA, KHB or KIADB jurisdiction — the sanctioning authority, betterment charges, and bye-laws differ across them | S | Govt: planning authority — jurisdiction layer on the parcel |
 | 2.4 | Building plan approval matches the actual number of towers, floors and units | V | Govt: authority — approved plan copy |
 | 2.5 | Occupancy Certificate (OC) is specific to *this tower/phase* | F | Govt: relevant authority — tower/phase-specific OC copy |
 | 2.6 | Confirm the plot isn't affected by lake buffer, rajakaluve, or FTL/drainage violation | F | Govt: local authority — lake/buffer maps |
