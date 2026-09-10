@@ -1,4 +1,6 @@
-﻿# Bengaluru / Karnataka Property Due-Diligence Verifier Skills
+﻿# Bengaluru / Karnataka Property Due-Diligence & Home-Buying Skills
+
+Public skill pack for Bengaluru/Karnataka home-buying due diligence, covering apartments, villas, land/plot checks, and project comparison for residential property buyers in Karnataka.
 
 Claude Skills that turn a Bengaluru/Karnataka property due-diligence checklist into an interactive verification session: describe the property, upload documents as you collect them (K-RERA certificate, sale agreement, cost sheet, encumbrance certificate, khata, layout approval, brochure, and so on), and Claude cross-checks each one against the full checklist — tracking every item as **Verified**, **Flagged**, or **Open**, and refining that tracker as more documents arrive.
 
@@ -58,6 +60,48 @@ These are [Claude Skills](https://docs.claude.com/en/docs/claude-code/skills) �
 - **claude.ai (Skills feature, where available)**: create a new skill and paste in the contents of the relevant `SKILL.md`.
 
 Once loaded, start a conversation naming the property you're evaluating and begin sharing documents — the skill takes it from there.
+
+## Publish to skills.sh
+
+To publish this repository as a public skill pack on skills.sh:
+
+1. Make sure the repo is public on GitHub.
+2. Keep the skill files in a `skills/` directory, with each skill containing a valid `SKILL.md` file and YAML front matter such as:
+
+```yaml
+---
+name: apartment-due-diligence-verifier
+description: Use when a buyer wants to validate a specific Bengaluru/Karnataka apartment against a due-diligence checklist.
+---
+```
+
+3. Push the repository to GitHub.
+4. Install it with:
+
+```bash
+npx skills add nrashok/blrhomebuyerhelper
+```
+
+If the command fails on Windows PowerShell because scripts are blocked, first run:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+Then retry the install command above.
+
+This repository is already structured for the expected public skill-pack pattern: a GitHub repo, a root `README.md`, a `LICENSE`, and skill folders under `skills/` with valid `SKILL.md` files.
+
+### skills.sh frontmatter requirement
+
+Each `SKILL.md` must begin with valid YAML front matter and include both `name` and `description` fields in the first block. Keep the opening block at the very top of the file, with no BOM, no extra blank lines before it, and no missing metadata. Example:
+
+```yaml
+---
+name: apartment-due-diligence-verifier
+description: Use when a buyer wants to validate a specific Bengaluru/Karnataka apartment against a due-diligence checklist.
+---
+```
 
 ## Disclaimer
 

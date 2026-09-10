@@ -1,6 +1,6 @@
 ﻿---
-name: land-plot-due-diligence-verifier
-description: Use when a buyer wants to validate a specific Bengaluru/Karnataka land parcel or plot against a due-diligence checklist by uploading documents (mother deed, EC, Bhoomi/RTC extract, layout approval, K-RERA filing, sale agreement, etc.) for Claude to cross-check, tracking and refining findings as more documents arrive.
+name: "land-plot-due-diligence-verifier"
+description: "Use when a buyer wants to validate a specific Bengaluru/Karnataka land parcel or plot by uploading documents such as a mother deed, EC, Bhoomi or RTC extract, layout approval, K-RERA filing, or sale agreement for Claude to cross-check and track each item."
 ---
 
 # Land & Plot Due-Diligence Verifier (Bengaluru/Karnataka)
@@ -62,9 +62,9 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 | 1.4 | Confirm the land is not granted/assigned SC/ST land protected under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands), government/poramboke, Inam, Wakf Board, or Endowment land — such transfers can be voided years later; check the grant order / saguvali chit and any non-alienation condition | F | Govt: Revenue Dept / Bhoomi — classification record, grant order, saguvali chit, and assigned-land register lookup |
 | 1.5 | Patta / RTC / survey records confirming current recorded ownership matches the seller | V | Govt: Bhoomi / Revenue Dept — RTC / patta extract |
 | 1.6 | Confirm the site's Khata status (A-Khata vs B-Khata) on BBMP e-Aasthi (bbmpeaasthi.karnataka.gov.in); a B-Khata site carries loan, building-licence, and resale restrictions | F | Govt: BBMP e-Aasthi — A-Khata vs B-Khata status for the parcel |
-| 1.6 | If purchasing via GPA rather than directly from the titleholder, verify the full GPA chain | F | Govt: Sub-Registrar — registered GPA document(s) |
-| 1.7 | Confirm no pending partition suit, succession dispute, or multiple-heir claim — request a legal heir certificate where the seller inherited the land | V | Govt: Revenue Office / local authority — legal heir certificate; Public records — court filings |
-| 1.8 | Litigation search: seller and land-parcel name against Karnataka High Court cause lists and Revenue Office records | V | Public records — Karnataka High Court cause-list and Revenue records |
+| 1.7 | If purchasing via GPA rather than directly from the titleholder, verify the full GPA chain | F | Govt: Sub-Registrar — registered GPA document(s) |
+| 1.8 | Confirm no pending partition suit, succession dispute, or multiple-heir claim — request a legal heir certificate where the seller inherited the land | V | Govt: Revenue Office / local authority — legal heir certificate; Public records — court filings |
+| 1.9 | Litigation search: seller and land-parcel name against Karnataka High Court cause lists and Revenue Office records | V | Public records — Karnataka High Court cause-list and Revenue records |
 
 ### 2. Land Classification & Conversion Status
 
