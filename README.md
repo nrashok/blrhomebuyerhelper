@@ -2,7 +2,8 @@
 
 Claude Skills that turn a Bengaluru/Karnataka property due-diligence checklist into an interactive verification session: describe the property, upload documents as you collect them (K-RERA certificate, sale agreement, cost sheet, encumbrance certificate, khata, layout approval, brochure, and so on), and Claude cross-checks each one against the full checklist — tracking every item as **Verified**, **Flagged**, or **Open**, and refining that tracker as more documents arrive.
 
-Due diligence for Bengaluru/Karnataka real estate is scattered across many portals — K-RERA, Bhoomi, e-Aasthi/e-Khata, BBMP, BDA/BMRDA, MUDA, KHB, KIADB, BESCOM, BWSSB, KSPCB, Karnataka Fire, AAI NOCAS, and sub-registrar records — with no single list of what to check and where to check it. These checklists and skills exist to close that gap.
+Due diligence for Bengaluru/Karnataka real estate is scattered across many portals — K-RERA, Bhoomi, e-Aasthi/e-Khata, BBMP, BDA/BMRDA, BIAPPA, BMICAPA, MUDA, KHB, KIADB, BESCOM, BWSSB, KSPCB, Karnataka Fire, AAI NOCAS, Kaveri (Kaveri 2.0), and sub-registrar records — with no single list of what to check and where to check it. These checklists and skills exist to close that gap.
+
 
 > **⚠️ Disclaimer:** This is a weekend hobby project, not a professional or commercial product. It's provided for informational/educational purposes only, with **no warranty of any kind**, and it is **not** legal, financial, engineering, surveying, or investment advice. It does not replace an independent lawyer, structural engineer/surveyor, or chartered accountant, and nothing it outputs is a legal or professional clearance of any property or document. Use entirely at your own risk — see [Disclaimer](#disclaimer) below for the full terms.
 
@@ -12,10 +13,10 @@ Due diligence for Bengaluru/Karnataka real estate is scattered across many porta
 |---|---|---|---|
 | [`apartment-due-diligence-verifier`](skills/apartment-due-diligence-verifier/SKILL.md) | Apartments / flats in a tower or phase | 16 | 114 |
 | [`villa-due-diligence-verifier`](skills/villa-due-diligence-verifier/SKILL.md) | Villas / independent houses in a gated community or plotted layout | 15 | 108 |
-| [`land-plot-due-diligence-verifier`](skills/land-plot-due-diligence-verifier/SKILL.md) | Land parcels and residential plots (individual resale or organized plotted layouts) | 13 | 72 |
+| [`land-plot-due-diligence-verifier`](skills/land-plot-due-diligence-verifier/SKILL.md) | Land parcels and residential plots (individual resale or organized plotted layouts) | 13 | 73 |
 | [`apartment-project-comparator`](skills/apartment-project-comparator/SKILL.md) | Side-by-side comparison of two or more specific apartment projects | 16 (embedded) | 114 (embedded) |
 
-Each checklist item carries a **Verify via** annotation naming exactly where to get supporting proof: the builder/seller, K-RERA, a named Karnataka government portal or office (Bhoomi, e-Aasthi/e-Khata, BBMP, BDA/BMRDA, MUDA, KHB, KIADB, BESCOM, BWSSB, KSPCB, Karnataka Fire & Emergency Services, AAI NOCAS, sub-registrar/IGRS, and others), your lender, public court/company records, an independent third-party professional (lawyer, structural engineer, surveyor, CA), or a personal site visit.
+Each checklist item carries a **Verify via** annotation naming exactly where to get supporting proof: the builder/seller, K-RERA, a named Karnataka government portal or office (Bhoomi, e-Aasthi/e-Khata, BBMP, BDA/BMRDA, BIAPPA, BMICAPA, MUDA, KHB, KIADB, BESCOM, BWSSB, KSPCB, Karnataka Fire & Emergency Services, AAI NOCAS, Kaveri (Kaveri 2.0), and others), your lender, public court/company records, an independent third-party professional (lawyer, structural engineer, surveyor, CA), or a personal site visit.
 
 ## Karnataka / Bengaluru portals used in these checklists
 
@@ -32,7 +33,8 @@ The skill set references the most common public-facing portals used in Bengaluru
 - KSPCB: https://kspcb.karnataka.gov.in
 - Karnataka Fire & Emergency Services: https://fire.karnataka.gov.in
 - AAI NOCAS: https://nocas.aai.aero
-- IGRS / district sub-registrar portals: official district registration portals for the jurisdiction
+- Kaveri Online Services (Kaveri 2.0): https://kaverionline.karnataka.gov.in
+- BIAPPA / BMICAPA: relevant planning-authority portals for the parcel or project in the airport corridor / north-Bengaluru influence area
 - MCA: https://www.mca.gov.in/
 
 > Verification date for the portal list above: 2026-09-10. Some portal names and URLs shift over time; treat this list as a current working reference, not a legal directory.
@@ -68,7 +70,7 @@ This project was built over a weekend as a personal, hobby exercise — a byprod
 
 Several checklist items (site visits, physical inspections, live negotiations) can only ever be closed by you, in person — the skills are designed to keep those honestly marked "Open" rather than infer a pass from a document alone.
 
-Regulatory references (K-RERA, Bhoomi, e-Aasthi/e-Khata, BBMP, BDA/BMRDA, MUDA, KHB, KIADB, BESCOM, BWSSB, KSPCB, Karnataka Fire, AAI NOCAS, and other Karnataka/Bengaluru government portals, procedures, and thresholds) reflect my own understanding at the time of writing and may be incomplete, outdated, or inaccurate. Regulations, portal names, and procedures change — verify everything independently against current, authoritative government sources before relying on it for any decision.
+Regulatory references (K-RERA, Bhoomi, e-Aasthi/e-Khata, BBMP, BDA/BMRDA, BIAPPA, BMICAPA, MUDA, KHB, KIADB, BESCOM, BWSSB, KSPCB, Karnataka Fire, AAI NOCAS, Kaveri (Kaveri 2.0), and other Karnataka/Bengaluru government portals, procedures, and thresholds) reflect my own understanding at the time of writing and may be incomplete, outdated, or inaccurate. Regulations, portal names, and procedures change — verify everything independently against current, authoritative government sources before relying on it for any decision.
 
 This repository and its content are provided **"as is," with no warranty of any kind, express or implied** (see the [LICENSE](LICENSE) for the full legal terms). To the fullest extent permitted by law, I accept no liability for any loss, damage, missed defect, or legal or financial consequence arising from the use of this repository. By using it, you agree you're doing so entirely at your own risk and discretion, and that you will seek qualified professional advice before making any property decision.
 

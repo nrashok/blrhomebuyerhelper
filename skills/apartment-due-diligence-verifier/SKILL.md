@@ -16,7 +16,7 @@ Before processing any document, gather:
 1. **Project identification** — developer name, project name, and the exact tower/phase and unit number under consideration. Large multi-tower projects issue phase-specific K-RERA numbers and phase-specific Occupancy Certificates — a certificate for Tower A does not cover Tower C, so anchor everything to the specific tower/phase, not just the project brand.
 2. **K-RERA registration number** for that tower/phase, if known.
 3. **What documents are already in hand**, and what's still pending.
-4. **Whether to attempt live verification** against public portals (K-RERA, Bhoomi, e-Aasthi/e-Khata, BBMP/BDA/BMRDA, BESCOM, BWSSB, KSPCB, AAI NOCAS) if you have live web access in this session. If you do, offer it explicitly — cross-checking a document's claims against the live government record is far stronger evidence than the document alone. If you don't have web access, say so and rely on document review plus the buyer's own portal checks.
+4. **Whether to attempt live verification** against public portals (K-RERA, Bhoomi, e-Aasthi/e-Khata, BBMP/BDA/BMRDA/BIAPPA/BMICAPA, BESCOM, BWSSB, KSPCB, AAI NOCAS, Kaveri (Kaveri 2.0)) if you have live web access in this session. If you do, offer it explicitly — cross-checking a document's claims against the live government record is far stronger evidence than the document alone. If you don't have web access, say so and rely on document review plus the buyer's own portal checks.
 
 ## Findings Tracker
 
@@ -32,7 +32,7 @@ Rules for updating the tracker:
 - A single document commonly speaks to several items at once. Update every item a new document touches, not just the one the buyer mentioned it for.
 - If two documents disagree — e.g. the brochure's carpet area doesn't match the sale agreement's, or the DG backup figure differs from the agreement annexure — mark the item ⚠️ **Flagged** and state the conflict plainly.
 - Items tagged as requiring **Self** in "Verify via" can never be closed from a document alone. Keep these ⬜ Open until the buyer confirms they've done the visit and reports back what they found.
-- When live portal access is available and the buyer agrees, run the check yourself (K-RERA, Bhoomi, e-Aasthi, BBMP/BDA/BMRDA, AAI NOCAS) and treat a live-portal confirmation as at least as strong as a document. If the live result conflicts with a document, flag it.
+- When live portal access is available and the buyer agrees, run the check yourself (K-RERA, Bhoomi, e-Aasthi, BBMP/BDA/BMRDA/BIAPPA/BMICAPA, AAI NOCAS, Kaveri (Kaveri 2.0)) and treat a live-portal confirmation as at least as strong as a document. If the live result conflicts with a document, flag it.
 
 ## After each document
 
@@ -69,9 +69,9 @@ Tags: **V** = Verify (confirm a stated fact/document exists), **S** = Spec (conf
 
 | # | Item | Tag | Verify via |
 |---|---|---|---|
-| 2.1 | Mother deed / chain of title unbroken for a minimum of 30 years | S | Govt: Sub-Registrar — deed chain via Karnataka IGRS / district sub-registrar records |
-| 2.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period, pulled from the sub-registrar directly — not just a developer-supplied copy | V | Govt: Sub-Registrar — EC application via IGRS or district office |
-| 2.3 | Confirm whether the land falls under BBMP, BDA, BMRDA, MUDA, KHB or KIADB jurisdiction — the approval authority and building bye-laws differ by authority | S | Govt: BBMP/BDA/BMRDA/MUDA/KHB/KIADB — jurisdiction layer for the exact parcel |
+| 2.1 | Mother deed / chain of title unbroken for a minimum of 30 years | S | Govt: Sub-Registrar — deed chain via Kaveri Online Services (Kaveri 2.0), kaverionline.karnataka.gov.in or the district sub-registrar records |
+| 2.2 | Encumbrance Certificate (Form 22 / EC) for the full 30-year period, pulled from the sub-registrar directly — not just a developer-supplied copy | V | Govt: Sub-Registrar — EC application via Kaveri (Kaveri 2.0) or district office |
+| 2.3 | Confirm whether the land falls under BBMP/GBA, BDA, BMRDA, BIAPPA, BMICAPA, MUDA, KHB or KIADB jurisdiction — the approval authority, betterment charges, and bye-laws differ across them | S | Govt: BBMP/BDA/BMRDA/BIAPPA/BMICAPA/MUDA/KHB/KIADB — jurisdiction layer for the exact parcel |
 | 2.4 | Building plan approval matches the actual number of towers, floors and units — cross-check against what's physically being built | V | Govt: authority approval — approved plan copy, checked against Self — site visit |
 | 2.5 | Occupancy Certificate (OC) is specific to *this tower/phase* — large multi-tower projects often get phase-wise OC, and Tower A's OC doesn't cover Tower C | F | Govt: relevant authority — tower/phase-specific OC copy |
 | 2.6 | Confirm the plot isn't affected by any lake buffer-zone, rajakaluve, stormwater drain, or FTL violation — check against local authority maps and notified buffer zones | F | Govt: BBMP/BDA/BMRDA/MUDA/KHB — lake/rajakaluve/stormwater maps |
