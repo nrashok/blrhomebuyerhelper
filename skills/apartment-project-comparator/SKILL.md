@@ -1,4 +1,4 @@
-﻿---
+---
 name: "apartment-project-comparator"
 description: "Use when a buyer wants to compare two or more Bengaluru/Karnataka apartment projects side by side on price, value, builder credibility, location, amenities, and due-diligence risk. Start from the buyer's existing project data and deepen each project as documents are shared."
 ---

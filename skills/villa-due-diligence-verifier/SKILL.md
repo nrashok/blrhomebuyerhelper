@@ -1,4 +1,4 @@
-﻿---
+---
 name: "villa-due-diligence-verifier"
 description: "Use when a buyer wants to validate a specific Bengaluru/Karnataka villa or independent house by uploading documents such as a K-RERA certificate, sale agreement, cost sheet, brochure, EC, layout approval, or khata for Claude to cross-check and track each item."
 ---
