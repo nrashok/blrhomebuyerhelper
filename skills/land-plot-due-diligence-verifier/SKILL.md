@@ -203,6 +203,7 @@ Any one of these, on its own, is a strong signal to pause the transaction until 
 - Plot is landlocked with no recorded legal right-of-way
 - Seller cannot produce an unbroken 30-year EC or explain a gap in the title chain
 - Granted or assigned land restricted under the Karnataka PTCL Act (Prohibition of Transfer of Certain Lands), or any SC/ST grant with a non-alienation condition, without a clear legal resolution
+- Plot is B-Khata (not A-Khata / valid e-Khata) yet sold as loan-ready or construction-ready, since B-Khata restricts loans, building licences, and resale
 
 ## Guardrails
 

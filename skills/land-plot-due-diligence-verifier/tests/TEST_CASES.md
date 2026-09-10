@@ -8,9 +8,9 @@
 - Must NOT happen: "must not accept a marketing plan as proof of approved layout; must not close the title chain without a full deed search."
 
 ### 2) B-Khata / loan-ready trap
-- Scenario name & intent: "The seller insists the plot is 'loan-ready' on a B-Khata or unconverted site — the title/classification item must be Flagged."
+- Scenario name & intent: "The seller insists the plot is 'loan-ready' on a B-Khata or unconverted site — item 1.6 (Khata status) and the classification items must be Flagged."
 - Inputs: "property type: plot; locality: Kengeri; survey no: 43/5B; docs: "loan-ready" claim from seller, B-Khata entry, RTC showing a non-residential status, no DC conversion, sale deed references a development area but no conversion order."
-- Expected tracker outcome: "2.2 ⚠️ Flagged; 2.3 ⚠️ Flagged; 1.4 ⚠️ Flagged if assigned or non-convertible status is present; 10.1 ⚠️ Flagged if the sale consideration is understated or the transaction does not match the legal status."
+- Expected tracker outcome: "1.6 ⚠️ Flagged — B-Khata confirmed on e-Aasthi, the primary loan/resale-restriction signal; 2.2 ⚠️ Flagged for missing DC conversion; 2.3 ⚠️ Flagged for classification; 1.4 ⚠️ Flagged if assigned or non-convertible status is present; 10.1 ⚠️ Flagged if the sale consideration is understated."
 - Expected verdict: "walk-away; Walk-away trigger fires because the land classification is not clean."
 - Must NOT happen: "must not treat 'loan-ready' as a substitute for conversion or title status; must not ignore the risk because a lender verbally said it qualifies."
 
