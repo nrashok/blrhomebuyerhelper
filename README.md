@@ -92,6 +92,17 @@ Then retry the install command above.
 
 This repository is already structured for the expected public skill-pack pattern: a GitHub repo, a root `README.md`, a `LICENSE`, and skill folders under `skills/` with valid `SKILL.md` files.
 
+### skills.sh frontmatter requirement
+
+Each `SKILL.md` must begin with valid YAML front matter and include both `name` and `description` fields in the first block. Keep the opening block at the very top of the file, with no BOM, no extra blank lines before it, and no missing metadata. Example:
+
+```yaml
+---
+name: apartment-due-diligence-verifier
+description: Use when a buyer wants to validate a specific Bengaluru/Karnataka apartment against a due-diligence checklist.
+---
+```
+
 ## Disclaimer
 
 This project was built over a weekend as a personal, hobby exercise — a byproduct of Bengaluru property search — and is shared publicly in case it helps other buyers. It is **not**:
