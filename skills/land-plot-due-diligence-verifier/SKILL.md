@@ -1,6 +1,6 @@
 ﻿---
-name: land-plot-due-diligence-verifier
-description: Use when a buyer wants to validate a specific Bengaluru/Karnataka land parcel or plot against a due-diligence checklist by uploading documents (mother deed, EC, Bhoomi/RTC extract, layout approval, K-RERA filing, sale agreement, etc.) for Claude to cross-check, tracking and refining findings as more documents arrive.
+name: "land-plot-due-diligence-verifier"
+description: "Use when a buyer wants to validate a specific Bengaluru/Karnataka land parcel or plot by uploading documents such as a mother deed, EC, Bhoomi or RTC extract, layout approval, K-RERA filing, or sale agreement for Claude to cross-check and track each item."
 ---
 
 # Land & Plot Due-Diligence Verifier (Bengaluru/Karnataka)

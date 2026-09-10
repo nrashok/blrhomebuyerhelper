@@ -1,6 +1,6 @@
 ﻿---
-name: apartment-due-diligence-verifier
-description: Use when a buyer wants to validate a specific Bengaluru/Karnataka apartment against a due-diligence checklist by uploading documents (K-RERA cert, sale agreement, cost sheet, brochure, EC, khata, layout approval, OCC/OC, etc.) for Claude to cross-check, tracking and refining findings as more documents arrive.
+name: "apartment-due-diligence-verifier"
+description: "Use when a buyer wants to validate a specific Bengaluru/Karnataka apartment by uploading documents such as a K-RERA certificate, sale agreement, cost sheet, brochure, EC, khata, layout approval, or OC for Claude to cross-check and track each item."
 ---
 
 # Apartment Due-Diligence Verifier (Bengaluru/Karnataka)

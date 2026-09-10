@@ -1,6 +1,6 @@
 ﻿---
-name: apartment-project-comparator
-description: Use when a buyer wants to compare two or more specific Bengaluru/Karnataka apartment projects side by side — e.g. the same BHK configuration in nearby micro-markets — on price/value, location, builder credibility, construction & amenities, and due-diligence risk. Starts from whatever the buyer already knows about each project and deepens per-project rigor as documents are shared, using the same checklist and Findings Tracker model as apartment-due-diligence-verifier.
+name: "apartment-project-comparator"
+description: "Use when a buyer wants to compare two or more Bengaluru/Karnataka apartment projects side by side on price, value, builder credibility, location, amenities, and due-diligence risk. Start from the buyer's existing project data and deepen each project as documents are shared."
 ---
 
 # Apartment Project Comparator (Bengaluru/Karnataka)
